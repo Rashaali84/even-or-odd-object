@@ -1,41 +1,37 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Least and Greatest</title>
+    <link rel="stylesheet" href="./style.css" />
 
-<head>
-  <meta charset='utf-8'>
-  <title>Least and Greatest</title>
-  <link rel="stylesheet" href="./style.css">
+    <script src="./app/string-sorter.js"></script>
 
-  <script src='./app/string-sorter.js'></script>
+    <script src="./log.js"></script>
+    <script src="./init.js"></script>
+  </head>
 
-  <script src='./log.js'></script>
-  <script src='./init.js'></script>
+  <body>
+    <section id="user-interface">
+      <select id="active-array-selection">
+        <option value="evens">evens</option>
+        <option value="odds">odds</option>
+        <option value="nany">nany</option>
+      </select>
+      <hr />
+      <form>
+        <input id="input" type="text" name="newString" />
+        <input id="save-button" type="button" value="save" /> <br />
+      </form>
+      <hr />
+      <h3>active list</h3>
+      <div id="selected"></div>
+      <hr />
+      <button id="reset-button">reset</button>
+    </section>
 
-</head>
-
-<body>
-  <section id='user-interface'>
-    <select id="active-array-selection">
-      <option value="evens">evens</option>
-      <option value="odds">odds</option>
-      <option value="nany">nany</option>
-    </select>
-    <hr>
-    <form>
-      <input id='input' type='text' name='newString' />
-      <input id='save-button' type='button' value='save' /> <br>
-    </form>
-    <hr>
-    <h3>active list</h3>
-    <div id='selected'></div>
-    <hr>
-    <button id='reset-button'>reset</button>
-  </section>
-
-
-  <script src='./interactions/add-string.js'></script>
-  <script src='./interactions/set-active.js'></script>
-  <script src='./interactions/reset.js'></script>
-</body>
-
+    <script src="./interactions/add-string.js"></script>
+    <script src="./interactions/set-active.js"></script>
+    <script src="./interactions/reset.js"></script>
+  </body>
 </html>
